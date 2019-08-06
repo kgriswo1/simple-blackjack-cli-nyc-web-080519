@@ -43,19 +43,19 @@ end
 #   current_total
 # end
 
-def hit?(current_total)
-  prompt_user
-  input = get_user_input
-  if input == 'h' 
-    current_total += deal_card
-    i += 1
-  elsif !(input =='h' || input ='s')
-    invalid_command
-    prompt_user
-    get_user_input
-  end
-  current_total
-end
+# def hit?(current_total)
+#   prompt_user
+#   input = get_user_input
+#   if input == 'h' 
+#     current_total += deal_card
+#     i += 1
+#   elsif !(input =='h' || input ='s')
+#     invalid_command
+#     prompt_user
+#     get_user_input
+#   end
+#   current_total
+# end
 
 
 def invalid_command
