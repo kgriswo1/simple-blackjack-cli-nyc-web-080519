@@ -52,6 +52,7 @@ end
 def runner
   welcome
   card_total = initial_round
+  while card_total 
   current_total = hits?(card_total)
   display_card_total(current_total)
   
