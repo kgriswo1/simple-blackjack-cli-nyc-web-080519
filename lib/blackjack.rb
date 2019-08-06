@@ -28,17 +28,31 @@ def initial_round
   return card_total
 end
 
+# def hit?(current_total)
+#   i = 0
+#   while i == 0
+#     prompt_user
+#     input = get_user_input
+#     if input == 'h' 
+#       current_total += deal_card
+#       i += 1
+#     elsif !(input =='h' || input ='s')
+#       invalid_command
+#     end
+#   end
+#   current_total
+# end
+
 def hit?(current_total)
-  i = 0
-  while i == 0
+  prompt_user
+  input = get_user_input
+  if input == 'h' 
+    current_total += deal_card
+    i += 1
+  elsif !(input =='h' || input ='s')
+    invalid_command
     prompt_user
-    input = get_user_input
-    if input == 'h' 
-      current_total += deal_card
-      i += 1
-    elsif !(input =='h' || input ='s')
-      invalid_command
-    end
+    get_user_input
   end
   current_total
 end
